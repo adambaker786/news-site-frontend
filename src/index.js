@@ -9,7 +9,7 @@ import linkedin from './img/linkedin.png';
 import twitter from './img/twitter.png';
 
 import getAllNews from "./getAllNews";
-import getComments from "./getComments"
+
 
 
 const window = () => {

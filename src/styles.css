@@ -127,3 +127,29 @@ body {
     box-shadow: 0px 0px  5px 3px rgb(100, 100, 100);
 }
 
+.button-return {
+    width: 50px;
+    margin: 10px 0 0 10px;
+    font-size: 30px;
+    border-radius: 10px;
+    border: 3px solid black;
+    text-align: center;
+}
+.button-return:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px  5px 3px rgb(100, 100, 100);
+}
+
+.news-title {
+    cursor: pointer;
+    margin: 10px 0 0 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.news-title:hover {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    transition: 0.6s
+}
+
+
