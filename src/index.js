@@ -9,6 +9,7 @@ import linkedin from './img/linkedin.png';
 import twitter from './img/twitter.png';
 
 import getAllNews from "./getAllNews";
+import renderNews from "./render/renderNews";
 
 
 
@@ -75,6 +76,10 @@ const window = () => {
   twitterDiv.append(twitterSrc);
 
   socialMedia.append(facebookDiv, instagramDiv, linkedinDiv, twitterDiv);
+
+  menu_home.addEventListener('click', () => {
+    renderNews();
+  })
 
   
 };

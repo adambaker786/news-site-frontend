@@ -63,6 +63,7 @@ body {
     background-color: white;
     color: #24292F;
     font-weight: 400px;
+    cursor: pointer;
 }
 
 .category {
@@ -80,7 +81,8 @@ body {
     width: 850px;
     min-height: 200px;
     background-color: #EDEDED;
-    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px 10px 0 10px;
 }
 
 .footer {
@@ -132,8 +134,10 @@ body {
     margin: 10px 0 0 10px;
     font-size: 30px;
     border-radius: 10px;
-    border: 3px solid black;
+    border: 3px solid #fff;
     text-align: center;
+    background-color: #D93B3A;
+    color: #fff
 }
 .button-return:hover {
     cursor: pointer;
@@ -143,7 +147,6 @@ body {
 .news-title {
     cursor: pointer;
     margin: 10px 0 0 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .news-title:hover {
     border: 1px solid black;
@@ -151,5 +154,21 @@ body {
     padding: 5px;
     transition: 0.6s
 }
+.news-title-by-one {
+    margin: 10px 0 0 10px;
 
+}
+.comment {
+    margin: 20px 0 0 10px;
+}
+
+.login{
+    display: inline;
+    margin: 15px 0 0 15px;
+    font-weight: bold;
+}
+
+.comment-text {
+    margin: 5px 0 0 15px;
+}
 

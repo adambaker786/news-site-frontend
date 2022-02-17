@@ -27,6 +27,7 @@ function renderNews() {
             nodeComment.textContent = 'Комментарии:';
 
             nodeButtonReturn.classList.add('button-return');
+            nodeNewsTitle.classList.add('news-title-by-one');
 
             nodeButtonReturn.addEventListener('click', () => {
                 renderNews()
