@@ -10,6 +10,7 @@ import twitter from './img/twitter.png';
 
 import getAllNews from "./getAllNews";
 import renderNews from "./render/renderNews";
+import getCategories from "./getCategories";
 
 
 
@@ -86,4 +87,5 @@ const window = () => {
 
 window();
 getAllNews();
+getCategories();
 // getComments();
