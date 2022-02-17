@@ -1,7 +1,9 @@
+/* eslint-disable no-undef */
 import state from '../state';
+import getComments from '../getComments';
 
 function renderNews() {
-    const nodeMainDiv = document.querySelector('.content');
+    const nodeMainDiv = document.querySelector('.news_content');
     state.news.forEach((news) => {
         const newsTitle = document.createElement('div');
         newsTitle.textContent = news.title;
@@ -9,13 +11,20 @@ function renderNews() {
         
         newsTitle.addEventListener('click', () => {
             nodeMainDiv.textContent = '';
-            const nodeNewsTitle = document.createElement('h1');
-            nodeNewsTitle.textContent = news.title;
             
+            const nodeNewsTitle = document.createElement('h1');
             const nodeNewsText = document.createElement('p');
-            nodeNewsText.textContent = news.text;
+            const nodeComment = document.createElement('h3');
+            const nodeLine = document.createElement('hr');
 
-            nodeMainDiv.append(nodeNewsTitle, nodeNewsText)         
+            nodeNewsTitle.textContent = news.title;          
+            nodeNewsText.textContent = news.text;
+            nodeComment.textContent = 'Комментарии:';
+
+            nodeMainDiv.append(nodeNewsTitle, nodeNewsText, nodeComment, nodeLine);
+
+
+            getComments();
         })
     }) 
 }
